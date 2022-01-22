@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tailwind-Project</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -12,14 +12,57 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                 menu:'#707070',
               }
             }
           }
         }
       </script>
-
 </head>
+
+<header>
+    <!-- nav -->
+           <div class="container  flex  justify-between bg-gray-200	 ">
+                
+                <div class="brad-logo m-4">
+                    <a href="#">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                </div>
+                  <div>
+                      <input class="serch px-10 py-2 m-4 bg-gray-100
+                      w-mx-full rounded-lg " type="search"name="search" id="search" placeholder="Search .....">
+                        
+            
+                  </div>
+                <div class="nav-menu m-4 space-x-4 ">
+
+                    <a class="text-base font-medium text-menu " href="#">Home</a>
+                    <a class="text-base	font-medium	text-menu " href="#">Product</a>
+                    <a class="text-base	font-medium	text-menu " href="#">About Us</a>
+                    <a class="text-base	font-medium	text-menu " href="#">Contact Us</a>
+
+
+                </div>
+
+           </div>  
+</header>
 <body>
-    
+    <main>
+        <section class="container">
+          <div class="flex justify-center items-center px-6 ">
+              <div class="w-1/2 ">
+                    <h1 class="text-5xl">Mi LED TV 4A PRO 32</h1>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    <p>$189</p>
+                    <button>Buy now</button>
+              </div>
+                <div class="w-2/5">
+                    <img src="images/banner-images/headphone.png" alt="">
+                </div>
+          </div>  
+
+        </section>
+    </main>    
 </body>
 </html>
